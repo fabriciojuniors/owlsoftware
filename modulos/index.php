@@ -7,7 +7,7 @@
     if(!isset($_SESSION['usuario'])){
       echo "<script>
       alert('Você precisa estar conectado para acessar o sistema.  Redirecionando à tela de login.');
-      window.location.href = '/owlsoftware/';
+      window.location.href = '../';
       </script>";
     }
     if($_SESSION['multiplos'] == "s"){
@@ -27,7 +27,7 @@
 
   <!-- Custom fonts for this template-->
   <link rel="stylesheet" href="../menu/vendor/fontawesome-free/css/all.css">
-  <!-- <link href="/owlsoftware/menu/vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css"> -->
+  <!-- <link href="../menu/vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css"> -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui@3.0.0-beta.4/dist/css/coreui.min.css">
   <!-- Custom styles for this template-->
@@ -346,11 +346,11 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small" id="nome_usuario"><script>document.getElementById("nome_usuario").innerHTML = "<?php echo $_SESSION['usuario'];?>"</script></span>
-                <!-- <img class="img-profile rounded-circle" src="/owlsoftware/menu/img/"> -->
+                <!-- <img class="img-profile rounded-circle" src="../menu/img/"> -->
                 <script>
                   if(localStorage.getItem("foto") != ''){
                     var img = document.createElement('img');
-                    var caminho = "<?php echo ($_SESSION['foto'] == '') ? "/owlsoftware/menu/img/usuario.png" : "/owlsoftware/modulos/usuario/imagens/$_SESSION[foto]"?>";
+                    var caminho = "<?php echo ($_SESSION['foto'] == '') ? "../menu/img/usuario.png" : "../modulos/usuario/imagens/$_SESSION[foto]"?>";
                     console.log(caminho);
                     img.src = caminho;
                     img.classList.add("img-profile");
@@ -411,7 +411,7 @@
               if($query){
                 if(mysqli_num_rows($query)>0){
                   $tela = mysqli_fetch_array($query);
-                  include_once($_SERVER['DOCUMENT_ROOT'].$tela[0]);
+                  include_once($tela[0]);
                 }else{
                   echo "<strong>Atenção:</strong>A tela requisitada não está disponível para o seu usuário, entre em contato com o responsável pelo sistema para maiores informações.";
                 }
@@ -420,7 +420,7 @@
               }
               
             }else{
-              include_once($_SERVER['DOCUMENT_ROOT']."/owlsoftware/modulos/dashboard.html");
+              include_once("../modulos/dashboard.html");
             }
           ?>
         </div>
@@ -470,21 +470,21 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="/owlsoftware/menu/vendor/jquery/jquery.min.js"></script>
-  <script src="/owlsoftware/menu/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../menu/vendor/jquery/jquery.min.js"></script>
+  <script src="../menu/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="/owlsoftware/menu/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../menu/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="/owlsoftware/menu/js/sb-admin-2.min.js"></script>
+  <script src="../menu/js/sb-admin-2.min.js"></script>
 
   <!-- Page level plugins -->
-  <!-- <script src="/owlsoftware/menu/vendor/chart.js/Chart.min.js"></script> -->
+  <!-- <script src="../menu/vendor/chart.js/Chart.min.js"></script> -->
 
   <!-- Page level custom scripts -->
-  <!-- <script src="/owlsoftware/menu/js/demo/chart-area-demo.js"></script> -->
-  <!-- <script src="/owlsoftware/menu/js/demo/chart-pie-demo.js"></script> -->
+  <!-- <script src="../menu/js/demo/chart-area-demo.js"></script> -->
+  <!-- <script src="../menu/js/demo/chart-pie-demo.js"></script> -->
 
 </body>
 <script>
