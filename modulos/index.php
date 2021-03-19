@@ -1,8 +1,8 @@
 <?php
     //session_start();
-    include_once $_SERVER['DOCUMENT_ROOT']."/owlsoftware/conexao.php";
-    include $_SERVER['DOCUMENT_ROOT']."/owlsoftware/modulos/usuario/liberaTodos.php";
-    require $_SERVER['DOCUMENT_ROOT'].'/owlsoftware/vendor/autoload.php';
+    include_once "../conexao.php";
+    include "../modulos/usuario/liberaTodos.php";
+    require '../vendor/autoload.php';
 
     if(!isset($_SESSION['usuario'])){
       echo "<script>
@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui@3.0.0-beta.4/dist/css/coreui.min.css">
   <!-- Custom styles for this template-->
   <link href="../menu/css/sb-admin-2.min.css" rel="stylesheet">
-  <script src="/owlsoftware/common/js/jquery.min.js"></script>
+  <script src="../common/js/jquery.min.js"></script>
 
 </head>
 <style>
@@ -495,7 +495,7 @@
       
     }
     var dados = {usuario: <?php echo $_SESSION['id'];?>};
-    fetch("/owlsoftware/modulos/adm/permissoes/controller/validaacesso.php",{
+    fetch("../modulos/adm/permissoes/controller/validaacesso.php",{
       method: "POST"  ,
       body: JSON.stringify(dados),
       headers: {'Content-Type': 'application/json'}
