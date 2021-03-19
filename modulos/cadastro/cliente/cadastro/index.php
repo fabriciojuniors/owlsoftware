@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="/owlsoftware/modulos/cadastro/produto/cadastro/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-  <script src="/owlsoftware/modulos/cadastro/cliente/cadastro/js/dados.js"></script>
-  <script src="/owlsoftware/modulos/cadastro/cliente/cadastro/js/funcoes.js"></script>
-  <script src="/owlsoftware/modulos/cadastro/cliente/cadastro/js/buscaCEP.js"></script>
+  <script src="../modulos/cadastro/cliente/cadastro/js/dados.js"></script>
+  <script src="../modulos/cadastro/cliente/cadastro/js/funcoes.js"></script>
+  <script src="../modulos/cadastro/cliente/cadastro/js/buscaCEP.js"></script>
   <!-- <script src="/owlsoftware/Modulos/Cadastro/produto/Consulta/js/funcoes.js"></script> -->
   
   <title>Cliente</title>

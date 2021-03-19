@@ -1,5 +1,6 @@
 <?php
-    include $_SERVER['DOCUMENT_ROOT'].'/owlsoftware/conexao.php'; 
+    //include $_SERVER['DOCUMENT_ROOT'].'/owlsoftware/conexao.php'; 
+    //include('./conexao.php');
     if(isset($_GET['i'])){
         $sql = "SELECT tp_entrada.*, usuario.usuario.nome as nome FROM tp_entrada INNER JOIN usuario.usuario WHERE codigo = $_GET[i] AND usuario.usuario.id = tp_entrada.usuario_criacao";
         $query = mysqli_query($link, $sql);

@@ -1,5 +1,6 @@
 <?php
-    include_once "conexao.php";
+    //include_once "conexao.php";
+    session_start();
     unset($_SESSION['usuario']);
     unset($_SESSION['foto']);
     unset($_SESSION['id']);
@@ -84,7 +85,8 @@
 
 <?php
     if(isset($_POST['login']) && isset($_POST['senha'])){
-        mysqli_select_db($link, 'usuario');
+        //mysqli_select_db($link, 'usuario');
+        $link = mysqli_connect("g84t6zfpijzwx08q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "xqseiqrilgh33nlv", "ywo1ff24ke3ddb32", "j7fesyrhvih0yae6");
         $login = $_POST['login'];
         $senha = $_POST['senha'];
 
@@ -98,14 +100,14 @@
             $_SESSION['foto'] = $result['foto'];
             $_SESSION['id'] = $result['id'];
             $_SESSION['multiplos'] = "s";
-            header("Location: /owlsoftware/modulos/selecaoNamespace.php") ;
+            header("Location: ./modulos/selecaoNamespace.php") ;
            }else{
             $_SESSION['usuario'] = $result['nome'];
             $_SESSION['foto'] = $result['foto'];
             $_SESSION['id'] = $result['id'];
             $_SESSION['namespace'] = $result['namespace'];
             $_SESSION['multiplos'] = "n";
-            header("Location: /owlsoftware/modulos/index.php") ;
+            header("Location: ./modulos/index.php") ;
            }
 
         }else{

@@ -1,5 +1,5 @@
 <?php
-    include_once $_SERVER['DOCUMENT_ROOT']."/owlsoftware/conexao.php";
+    include_once "../conexao.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
