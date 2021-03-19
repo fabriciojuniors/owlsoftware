@@ -1,0 +1,10 @@
+--------------TABELAS QUE DEVEM SER EXPORTADAS COM REGISTROS----------
+1° Origem movimentação de Estoque
+2° Tipo de movimentação de estoque
+3° Status OR
+4° Usuários
+5° Parametros
+6° Permissões de acesso
+7° País
+8° UF
+9° Cidades

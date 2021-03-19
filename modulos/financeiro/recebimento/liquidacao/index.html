@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui@3.0.0-beta.4/dist/css/coreui.min.css">
+  <link rel="stylesheet" href="/owlsoftware/common/css/style.css">
+  <script src="/owlsoftware/modulos/financeiro/recebimento/liquidacao/js/funcoes.js"></script>
+  <script src="/owlsoftware/modulos/financeiro/recebimento/liquidacao/js/dados.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>  
+  <title>Liquidação - Ordem Recebimento</title>
+</head>
+<style>
+input[type="date"]::-webkit-inner-spin-button{
+    display: none;
+    -webkit-appearance: none;
+}
+.text-center {
+    text-align: center; 
+}
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
+#dadosMovto{
+    background: rgba(187, 187, 187, 0.089);
+    position: static;
+    bottom:0;
+    width: 100%;
+    /* margin-top: 10px; */
+}
+</style>
+<body>
+<div id="conteudo" >
+  <div class="alert" style="display: none;" id="erroMovto" role="alert">  </div>
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h4 mb-0 text-gray-800">Liquidação - Ordem Recebimento</h1>
+    
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar com grupos de botões">
+      <div class="btn-group mr-2" role="group" aria-label="Segundo grupo">
+        <button type="button" onclick="limpar()" class="btn btn-square btn-light" style="border: 1px solid rgb(110, 107, 107);">Novo</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Terceiro grupo">
+        <button type="button" class="btn btn-primary btn-square" onclick="pesquisar()">Pesquisar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conteúdo -->
+  <div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label for="">Filtro</label>
+          <div class="input-group" style="width: 350px;">
+            <select class="custom-select campos"  id="opcaoFiltro" onchange="validaFiltro()"  aria-label="Example select with button addon">
+              <option value="#">Selecione</option>
+              <option value="1">N° OR</option>
+              <option value="2">Cliente (código)</option>
+            </select>
+            <div class="input-group-append">
+              <input type="text"  class="form-control campos" id="filtro">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="width: 50%;">
+        <div class="row">
+            <label for="">Emissão</label><br>
+        </div>
+        <div class="row">
+            <input type="date" name="" id="iemissao" class="form-control campos" style="margin-right: 15px;">
+            <p>à</p>
+            <input type="date" name="" id="femissao" class="form-control campos" style="margin-left: 15px;">
+        </div>
+
+        <div class="custom-control custom-checkbox row">
+          <input type="checkbox" class="custom-control-input" id="movimento">
+          <label class="custom-control-label" for="movimento">Exibir títulos com movimento</label>
+        </div>
+      </div>
+    </div>
+
+    <div id="resultadoOR" style="margin-top: 25px; height: 300px; overflow-y: auto;"></div>
+
+  </div>
+  <div class="">
+    <div class="row" style="margin-top: 1%;" id="dadosMovto">
+      <div class="col-sm">
+        <div class="form-group">
+          <label for="">Tipo de movto. financeiro</label>
+          <select name="" id="stpmovto" style="height: 35px;" class="form-control campos">
+            <option value="#">Selecione</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="form-group">
+          <label for="">Conta bancária</label>
+          <select name="" id="sconta" style="height: 35px;" class="form-control campos">
+            <option value="#">Selecione</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="col-sm" style="margin-top: 25px;">
+        <input type="hidden" id="qtdTitulos">
+        <!-- <img src="/owlsoftware/image/loading.gif" id="loadSalvar" style="width: 20px; height: 20px; display: none" alt="Carregando..."> -->
+        <button id="salvarMovto" onclick="salvarMovto()" class="btn btn-success btn-square" ><i style="display: none;" id="loadSalvar" class="fa fa-spinner fa-spin"></i>  Salvar Movimentação</button>
+      </div>
+  </div>
+
+</div>
+  <!-- Fim Conteúdo -->
+</body>
+<script>
+  
+</script>
+</html>

@@ -1,0 +1,47 @@
+.conteudo{
+    height: 100%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.esquerda{
+    width: 50%;
+    height: 100%;}
+
+.campos{
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.direita{
+    margin-left: 300px;
+    width: 50%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 600px){
+    .conteudo{
+        flex-direction: column;
+        
+    }
+    .esquerda{
+        width: 100%;
+    }
+    .direita{
+        margin-left: 0;
+        width: 100%;
+    }
+
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}

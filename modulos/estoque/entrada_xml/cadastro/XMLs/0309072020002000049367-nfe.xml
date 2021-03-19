@@ -1,0 +1,199 @@
+<NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+<infNFe Id="NFe42200707920916000451550020000493671001170501" versao="4.00">
+<ide>
+<cUF>42</cUF>
+<cNF>00117050</cNF>
+<natOp>VENDA MERC ADQ RECEB TERCEIROS</natOp>
+<mod>55</mod>
+<serie>2</serie>
+<nNF>49367</nNF>
+<dhEmi>2020-07-09T16:35:08-03:00</dhEmi>
+<dhSaiEnt>2020-07-09T16:35:08-03:00</dhSaiEnt>
+<tpNF>1</tpNF>
+<idDest>1</idDest>
+<cMunFG>4208203</cMunFG>
+<tpImp>1</tpImp>
+<tpEmis>1</tpEmis>
+<cDV>1</cDV>
+<tpAmb>1</tpAmb>
+<finNFe>1</finNFe>
+<indFinal>0</indFinal>
+<indPres>9</indPres>
+<procEmi>0</procEmi>
+<verProc>12.1.025 | 3.0</verProc>
+</ide>
+<emit>
+<CNPJ>07920916000451</CNPJ>
+<xNome>BSC QUIMICA LTDA</xNome>
+<xFant>BSCITJ</xFant>
+<enderEmit>
+<xLgr>RUA FERMINO  VIEIRA CORDEIRO</xLgr>
+<nro>3750</nro>
+<xBairro>ESPINHEIROS</xBairro>
+<cMun>4208203</cMun>
+<xMun>ITAJAI</xMun>
+<UF>SC</UF>
+<CEP>88317200</CEP>
+<cPais>1058</cPais>
+<xPais>BRASIL</xPais>
+<fone>4732245300</fone>
+</enderEmit>
+<IE>258378352</IE>
+<IM>311452</IM>
+<CRT>3</CRT>
+</emit>
+<dest>
+<CNPJ>08720846000108</CNPJ>
+<xNome>CARBO SUL INDUSTRIA QUIMICA LTDA - ME</xNome>
+<enderDest>
+<xLgr>RUA VITALINO LUIZ DA SILVA</xLgr>
+<nro>S N</nro>
+<xCpl>LOT</xCpl>
+<xBairro>IPIRANGA</xBairro>
+<cMun>4216602</cMun>
+<xMun>SAO JOSE</xMun>
+<UF>SC</UF>
+<CEP>88111535</CEP>
+<cPais>1058</cPais>
+<xPais>BRASIL</xPais>
+<fone>4830948008</fone>
+</enderDest>
+<indIEDest>1</indIEDest>
+<IE>255364393</IE>
+</dest>
+<det nItem="1">
+<prod>
+<cProd>10125</cProd>
+<cEAN>SEM GTIN</cEAN>
+<xProd>UN3253, TRIOXOSSILICATO DE DISODIO, 8, III</xProd>
+<NCM>28391900</NCM>
+<CFOP>5102</CFOP>
+<uCom>KG</uCom>
+<qCom>2000.0000</qCom>
+<vUnCom>2.9000000000</vUnCom>
+<vProd>5800.00</vProd>
+<cEANTrib>SEM GTIN</cEANTrib>
+<uTrib>KG</uTrib>
+<qTrib>2000.0000</qTrib>
+<vUnTrib>2.9000000000</vUnTrib>
+<indTot>1</indTot>
+</prod>
+<imposto>
+<ICMS>
+<ICMS00>
+<orig>0</orig>
+<CST>00</CST>
+<modBC>3</modBC>
+<vBC>5800.00</vBC>
+<pICMS>12.0000</pICMS>
+<vICMS>696.00</vICMS>
+</ICMS00>
+</ICMS>
+<IPI>
+<cEnq>999</cEnq>
+<IPITrib>
+<CST>99</CST>
+<vBC>5800.00</vBC>
+<pIPI>0.0000</pIPI>
+<vIPI>0.00</vIPI>
+</IPITrib>
+</IPI>
+<PIS>
+<PISAliq>
+<CST>01</CST>
+<vBC>5800.00</vBC>
+<pPIS>1.6500</pPIS>
+<vPIS>95.70</vPIS>
+</PISAliq>
+</PIS>
+<COFINS>
+<COFINSAliq>
+<CST>01</CST>
+<vBC>5800.00</vBC>
+<pCOFINS>7.6000</pCOFINS>
+<vCOFINS>440.80</vCOFINS>
+</COFINSAliq>
+</COFINS>
+</imposto>
+</det>
+<total>
+<ICMSTot>
+<vBC>5800.00</vBC>
+<vICMS>696.00</vICMS>
+<vICMSDeson>0.00</vICMSDeson>
+<vFCP>0.00</vFCP>
+<vBCST>0.00</vBCST>
+<vST>0.00</vST>
+<vFCPST>0.00</vFCPST>
+<vFCPSTRet>0.00</vFCPSTRet>
+<vProd>5800.00</vProd>
+<vFrete>0.00</vFrete>
+<vSeg>0.00</vSeg>
+<vDesc>0.00</vDesc>
+<vII>0.00</vII>
+<vIPI>0.00</vIPI>
+<vIPIDevol>0.00</vIPIDevol>
+<vPIS>95.70</vPIS>
+<vCOFINS>440.80</vCOFINS>
+<vOutro>0.00</vOutro>
+<vNF>5800.00</vNF>
+</ICMSTot>
+</total>
+<transp>
+<modFrete>0</modFrete>
+<transporta>
+<CNPJ>79912556000104</CNPJ>
+<xNome>LAKO TRANSPORTES RODOVIARIOS DE CARGAS LTDA - EPP</xNome>
+<IE>251562719</IE>
+<xEnder>JORGE LACERDA 1789 SALA 02</xEnder>
+<xMun>ITAJAI</xMun>
+<UF>SC</UF>
+</transporta>
+<vol>
+<qVol>80</qVol>
+<esp>SACO 25 KG</esp>
+<pesoL>2000.000</pesoL>
+<pesoB>2004.000</pesoB>
+</vol>
+</transp>
+<cobr>
+<fat>
+<nFat>0304936701</nFat>
+<vOrig>5800.00</vOrig>
+<vDesc>0.00</vDesc>
+<vLiq>5800.00</vLiq>
+</fat>
+<dup>
+<nDup>001</nDup>
+<dVenc>2020-08-13</dVenc>
+<vDup>1933.72</vDup>
+</dup>
+<dup>
+<nDup>002</nDup>
+<dVenc>2020-08-20</dVenc>
+<vDup>1933.14</vDup>
+</dup>
+<dup>
+<nDup>003</nDup>
+<dVenc>2020-08-27</dVenc>
+<vDup>1933.14</vDup>
+</dup>
+</cobr>
+<pag>
+<detPag>
+<indPag>1</indPag>
+<tPag>15</tPag>
+<vPag>5800.00</vPag>
+</detPag>
+</pag>
+<infAdic>
+<infCpl>DECLARO QUE OS PRODUTOS PERIGOSOS ESTAO ADEQUADAMENTE CLASSIFICADOS, EMBALA DOS, IDENTIFICADOS E ESTIVADOS PARA SUPORTAR OS RISCOS DAS OPERACOES DE TRA NSPORTE E QUE ATENDAM AS EXIGENCIAS DA REGULAMENTACAO. VASILHAMES A DEVOLVE R COM TAMPA E CONTAINER COM REGISTRO NO PRAZO DE 45 DIAS PEDIDO: 26683 NR. ORDEM DE MONTAGEM: 27271</infCpl>
+</infAdic>
+<infRespTec>
+<CNPJ>02497398000149</CNPJ>
+<xContato>Angela Maria Gheller Telles</xContato>
+<email>resp_tecnico_dfe_supplychain@totvs.com.br</email>
+<fone>1128593906</fone>
+</infRespTec>
+</infNFe>
+</NFe>

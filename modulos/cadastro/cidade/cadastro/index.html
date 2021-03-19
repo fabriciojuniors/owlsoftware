@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui@3.0.0-beta.4/dist/css/coreui.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/owlsoftware/modulos/cadastro/cidade/cadastro/js/funcoes.js"></script>
+  <script src="/owlsoftware/modulos/cadastro/cidade/consulta/js/funcoes.js"></script>
+  
+  <title>Cidade</title>
+</head>
+<style>
+</style>
+<body>
+<div id="conteudo2" style="display: block;">
+    
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h4 mb-0 text-gray-800">Cidade</h1>
+    
+    <div class="btn-toolbar" id="botoes" role="toolbar" aria-label="Toolbar com grupos de botões">
+      <div class="btn-group mr-2" role="group" aria-label="Primeiro grupo">
+        <button type="button" id="confirmar" tabindex="4" onclick="confirmar()" class="btn btn-square btn-success">Confirmar</button>
+      </div>
+      <div class="btn-group mr-2" role="group" aria-label="Segundo grupo">
+        <button type="button" onclick="limpar()" class="btn btn-square btn-light" style="border: 1px solid rgb(110, 107, 107);">Novo</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Terceiro grupo">
+        <button type="button" class="btn btn-primary btn-square" onclick="listar(1,6)">Pesquisar</button>
+      </div>
+    </div>
+  </div>
+    
+  <div id="form">
+    <form action="" id="formulario" method="post">
+      <input type="text" style="display: none;" id="id">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="">Código</label>
+            <input type="text" id="codigo" disabled="disabled" style="width: 150px; height: 34px;" class="form-control">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="row">
+              <div class="col">
+                  <div class="form-group">
+                      <label for="">País</label>
+                      <select name="" id="Selectpais" class="form-control" onchange="carregaUF(this.value)" style="width: 200px; height: 30px;">
+                        <option value="#">Selecione</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="">UF</label>
+                  <select name="uf" id="uf" class="form-control" style="width: 200px; height: 30px;">
+                    <option value="#">Selecione</option>
+                  </select>
+              </div>
+              </div>
+          </div>
+      </div>
+        <div class="col">
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Nome</label>
+                        <input type="text" style="width: 200px; height: 30px;" tabindex="1" class="form-control" id="nome">
+                    </div>
+                </div>
+                <div class="col">
+                  
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col">
+           
+        </div>
+    </div>
+      <button type="submit" id="btnsubmit" style="display: none;"></button>
+    </form>
+  </div>
+
+  <div id="pesquisar" style="margin-top: 30px; height:300px;">
+    
+  </div> </div>
+</div>
+</body>
+<script>
+  
+</script>
+</html>

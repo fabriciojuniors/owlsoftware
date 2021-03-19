@@ -1,0 +1,18 @@
+Banco -> Junior -> Feito
+Cidade -> Maicon -> Feito
+CLiente -> Etapa 2
+Comentário Produto -> Etapa 3
+Condição de Pagamento -> Junior -> Feito
+Conta Bancária -> Junior -> Feito
+Forma de Pagamento -> Maicon -> Feito
+Grupo de Produto -> Maicon -> Feito
+Marca -> Maicon -> Feito
+Origem Estoque -> Junior -> Feito
+País -> Maicon -> Feito
+Permissões de acesso -> Etapa final
+Produto -> Etapa 2
+Tamanho -> Feito
+Tipo de Produto -> Feito
+Tipo de movto. Estoque -> Junior -> Feito
+Tipo de Venda -> Junior -> Feito
+UF -> Maicon -> Feito

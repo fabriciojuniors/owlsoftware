@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="teste.js"></script>
+  <title>Dashboard</title>
+</head>
+<body >
+<div id="conteudo">
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+    <i class="fas fa-redo" onclick="carregaDados2()" id="atualizaDash" title="Atualizar Dashboard" style="margin-top:0.2%;"></i>
+  </div>
+  <div class="row">
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4" style="height: 100px;">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Recebimentos (mensal)</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800" id="recMensal">R$40.000,00</div>
+            </div>
+            <div class="col-auto">
+              <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Earnings (Monthly) Card Example -->
+<div class="col-xl-3 col-md-6 mb" style="height: 100px;">
+  <div class="card border-left-success shadow h-100 py-2">
+    <div class="card-body">
+      <div class="row no-gutters align-items-center">
+        <div class="col mr-2">
+          <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Recebimentos (anual)</div>
+          <div class="h5 mb-0 font-weight-bold text-gray-800" id="recAnual">R$215.000,00</div>
+        </div>
+        <div class="col-auto">
+          <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+    <div class="card shadow mb-4">
+      <div class="card-header py">
+        <div class="row">
+          <h6 class=" font-weight-bold text-primary" style="margin-right: 1%;">Top compradores</h6>
+          
+        </div>
+        
+        
+      </div>
+      <div id="listagem" class="card-body">
+        <h4 class="small font-weight-bold">Maicon <span class="float-right">R$1.500</span></h4>
+        <div class="progress mb-4">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h4 class="small font-weight-bold">Junior <span class="float-right">R$1.750</span></h4>
+        <div class="progress mb-4">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h4 class="small font-weight-bold">Joana<span class="float-right">R$2.000</span></h4>
+        <div class="progress mb-4">
+          <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h4 class="small font-weight-bold">Marcos <span class="float-right">R$2.500</span></h4>
+        <div class="progress mb-4">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h4 class="small font-weight-bold">Tiago (Tih)<span class="float-right">R$10.000</span></h4>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
